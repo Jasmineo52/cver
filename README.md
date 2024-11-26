@@ -30,6 +30,6 @@ Please modify the ImageNet path of the [config](configs/sample/ilsvrc2012/single
 
 ## Issues / Contact
 Feel free to create an issue if you get a question or just
-email me ( sihao.lin@student.rmit.edu.au ). 
+email me ( fengjing@student.usm.my ). 
 
 # cver
