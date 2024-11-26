@@ -1,6 +1,6 @@
-# Knowledge Distillation via the Target-aware Transformer (CVPR2022)
+# Knowledge Distillation via the Shifted Window Target-aware Transformer(Swin TaT)
 
-Codebase of our **TaT** on ImageNet. Refer to [TaT-seg](https://github.com/sihaoevery/TaT-seg) for the experiments on semantic segmentation.
+Codebase of our **TaT** on ImageNet. Refer to [TaT_seg_ok] for the experiments on semantic segmentation.
 
 ## Overview
 Executable code can be found in [examples/image_classification.py](examples/image_classification.py). The implementation of **TaT** is [AttnEmbed](torchdistill/models/special.py). The loss function [MaskedFM](torchdistill/losses/single.py) is decoupled with the model. 
@@ -24,23 +24,12 @@ We use the Forward Hook to extract the intermediate representations. Just modify
 ### Before getting started
 Please modify the ImageNet path of the [config](configs/sample/ilsvrc2012/single_stage/tat/resnet18_from_resnet34_attn.yaml).
 
-We use 8 GPUs with 256 images per GPU.
 
-### Training 
-```
-sh ./train_local.sh
-```
 
-### Testing
-```bash
-sh ./test_local.sh
-```
 
 
 ## Issues / Contact
 Feel free to create an issue if you get a question or just
 email me ( sihao.lin@student.rmit.edu.au ). 
 
-## Acknowledgement
-This repo is built upon [torchdistill](https://github.com/yoshitomo-matsubara/torchdistill). Thanks to [Yoshitomo](https://github.com/yoshitomo-matsubara).
 # cver
